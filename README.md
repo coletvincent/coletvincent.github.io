@@ -1,6 +1,5 @@
 # Cole T Vincent
-## Raleigh, North Carolina
-### North Carolina State University
+## North Carolina State University, Raleigh, North Carolina
 ### B.S. in Statistics, Minor in the Japanese Language 
 
 ---
