@@ -131,3 +131,42 @@ footer {
     }
 }
 
+/* Dark Mode */
+
+.darkmode {
+    background-color: #222;
+    color: #eee;
+}
+
+.darkmode header,
+.darkmode main {
+    background-color: #333;
+}
+
+.darkmode a {
+    color: #82e0aa;
+}
+
+/* Scroll Fade In */
+
+.fade-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+/* Entry Animation on Page Load */
+
+body {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+body:not(.fade-out) {
+    opacity: 1;
+}
+
