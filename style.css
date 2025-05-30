@@ -1,0 +1,133 @@
+/* ---------- */
+/* Base Reset */
+/* ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: san-serif;
+    line-height: 1.6;
+    background-color: #d0d3d4;
+    color: #222;
+    padding: 1rem;
+}
+
+header, nav, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.cv-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #229954;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #1e8449;
+}
+
+/* ---------- */
+/* Navigation */
+/* ---------- */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color:#229954;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1e8449;
+}
+
+/* ------------ */
+/* Main Content */
+/* ------------ */
+
+main {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #555;
+}
+
+/* ---------- */
+/* Animations */
+/* ---------- */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- */
+/* Responsive */
+/* ---------- */
+
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+
+    nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem
+    }
+}
+
