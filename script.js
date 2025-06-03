@@ -1,9 +1,3 @@
-// Toggle Dark Mode
-
-document.getElementById("theme-toggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode")
-});
-
 // Scroll Fade In
 
 const fadeElements = document.querySelectorAll(".fade-scroll");
