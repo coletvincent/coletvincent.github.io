@@ -27,3 +27,16 @@ document.querySelectorAll('a').forEach(link => {
     });
   }
 });
+
+// For Fonts
+const fonts = [
+  '<link rel="preconnect" href="https://fonts.googleapis.com">',
+  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
+  '<link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">'
+];
+
+fonts.forEach(tag => {
+  const temp = document.createElement('template');
+  temp.innerHTML = tag.trim();
+  document.head.appendChild(temp.content.firstChild);
+});
