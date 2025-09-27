@@ -40,3 +40,6 @@ fonts.forEach(tag => {
   temp.innerHTML = tag.trim();
   document.head.appendChild(temp.content.firstChild);
 });
+
+
+// fake page transition
