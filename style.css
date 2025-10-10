@@ -3,12 +3,12 @@
 /* ---------- */
 
 :root {
-    --base-color: white;
-    --base-variant: #b9b9b9;
-    --text-color: #111528;
-    --secondary-text: #232738;
-    --primary-color: #3a435d;
-    --accent-color: #1e8449;
+    --base-color: #181C14;
+    --base-variant: #3C3D37;
+    --text-color: #ECDFCC;
+    --secondary-text: #697565;
+    --primary-color: #697565;
+    --accent-color: #ECDFCC;
 }
 
 * {
@@ -42,13 +42,11 @@ header {
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 700px;
+    height: 500px;
     object-fit: fill;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: none;
     display: flexbox;
+    align-content: space-around;
 }
 
 .cv-button {
