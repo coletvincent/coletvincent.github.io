@@ -3,12 +3,12 @@
 /* ---------- */
 
 :root {
-    --base-color: #181C14;
-    --base-variant: #3C3D37;
-    --text-color: #ECDFCC;
-    --secondary-text: #697565;
-    --primary-color: #697565;
-    --accent-color: #ECDFCC;
+    --base-color: #F5EFE7;
+    --base-variant: #D8C4B6;
+    --text-color: #213555;
+    --secondary-text: #3E5879;
+    --primary-color: #3E5879;
+    --accent-color: #3E5879;
 }
 
 * {
@@ -21,32 +21,52 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+.content{
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    max-width: 65%;
+    align-items: center;
+    text-align: center;
+}
+
 body {
     min-height: 100vh;
     background-color: var(--base-color);
     color: var(--text-color);
     padding: 1rem;
-    text-align: center;
+    width: 100%;
 }
 
 header, nav, main, footer {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 header {
+    display: flex;
+    justify-content: center;
     text-align: center;
     align-items: center;
     background-color: var(--base-color);
+    font-size: large;
 }
 
 .profile-pic {
-    width: 700px;
-    height: 500px;
+    width: 1024px;
+    height: 576px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-pic{
+    width: 1024px;
+    height: 576px;
     object-fit: fill;
-    display: flexbox;
-    align-content: space-around;
+    display: block;
+    margin: 0 auto;
 }
 
 .cv-button {
@@ -81,7 +101,7 @@ nav ul {
 }
 
 nav a {
-    font-size: x-large;
+    font-size: xx-large;
     color:var(--accent-color);
     text-decoration: none;
     font-weight: bold;
@@ -97,7 +117,7 @@ nav a::after {
     top: 50%;
     height: 3px;
     width: 0;
-    background-color: currentColor;
+    background-color: var(--base-variant);
     transition: width 0.5s ease;
 }
 
