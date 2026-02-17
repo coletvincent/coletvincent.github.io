@@ -3,12 +3,12 @@
 /* ---------- */
 
 :root {
-    --base-color: #F5EFE7;
-    --base-variant: #D8C4B6;
-    --text-color: #213555;
-    --secondary-text: #3E5879;
-    --primary-color: #3E5879;
-    --accent-color: #3E5879;
+    --base-color: #152A38;
+    --base-variant: #D1D4C9;
+    --text-color: #D1D4C9;
+    --secondary-text: #556E53;
+    --primary-color: #D1D4C9;
+    --accent-color: #556E53;
 }
 
 * {
@@ -31,11 +31,15 @@ html{
 }
 
 body {
-    min-height: 100vh;
-    background-color: var(--base-color);
-    color: var(--text-color);
-    padding: 1rem;
-    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    height: 100vh;
 }
 
 header, nav, main, footer {
@@ -54,8 +58,8 @@ header {
 }
 
 .profile-pic {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--base-variant);
@@ -65,7 +69,6 @@ header {
 .profile-pic img {
     width: 100%;
     height: 100%;
-    
 }
 
 .about-pic{
