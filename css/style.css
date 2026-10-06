@@ -8,7 +8,8 @@
     --text-color: #1F2937;        
     --secondary-text: #4B5563;    
     --primary-color: #1B4332;     
-    --accent-color: #40916C;      
+    --accent-color: #40916C;  
+    --university: #3E1485;    
 }
 
 * {
@@ -146,7 +147,7 @@ header::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(0.9);
+    transform: scale(2);
 }
 
 /* ------------- */
@@ -172,9 +173,9 @@ header::after {
 
 .profile-intro h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    letter-spacing: -0.01em;
-    font-size: 2.25rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -185,6 +186,17 @@ header::after {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.profile-title2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: var(--university);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .profile-header .ext-links {
